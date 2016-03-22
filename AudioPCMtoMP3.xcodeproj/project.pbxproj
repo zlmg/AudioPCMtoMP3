@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB0A1CA6DA3BB6CAF9A1F1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 879AA7C34FE387E5671065CD /* libPods.a */; };
 		9D29A4D71CA14D1C008AED1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29A4D61CA14D1C008AED1D /* main.m */; };
 		9D29A4DA1CA14D1C008AED1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29A4D91CA14D1C008AED1D /* AppDelegate.m */; };
 		9D29A4DD1CA14D1C008AED1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29A4DC1CA14D1C008AED1D /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		9D29A4E51CA14D1C008AED1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D29A4E31CA14D1C008AED1D /* LaunchScreen.storyboard */; };
 		9D29A4F01CA14D1C008AED1D /* AudioPCMtoMP3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29A4EF1CA14D1C008AED1D /* AudioPCMtoMP3Tests.m */; };
 		9D29A4FB1CA14D1C008AED1D /* AudioPCMtoMP3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29A4FA1CA14D1C008AED1D /* AudioPCMtoMP3UITests.m */; };
+		9D29A50B1CA15C91008AED1D /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D29A50A1CA15C91008AED1D /* libmp3lame.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ECD61FC3A51B2C6B57A38AB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		879AA7C34FE387E5671065CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D29A4D21CA14D1C008AED1D /* AudioPCMtoMP3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPCMtoMP3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D29A4D61CA14D1C008AED1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D29A4D81CA14D1C008AED1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		9D29A4F61CA14D1C008AED1D /* AudioPCMtoMP3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPCMtoMP3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D29A4FA1CA14D1C008AED1D /* AudioPCMtoMP3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPCMtoMP3UITests.m; sourceTree = "<group>"; };
 		9D29A4FC1CA14D1C008AED1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D29A5091CA15C91008AED1D /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		9D29A50A1CA15C91008AED1D /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		DCEC16A71006B961D2E3B83F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB0A1CA6DA3BB6CAF9A1F1A /* libPods.a in Frameworks */,
+				9D29A50B1CA15C91008AED1D /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,8 @@
 				9D29A4EE1CA14D1C008AED1D /* AudioPCMtoMP3Tests */,
 				9D29A4F91CA14D1C008AED1D /* AudioPCMtoMP3UITests */,
 				9D29A4D31CA14D1C008AED1D /* Products */,
+				E4315FAEA666641F3238DFC6 /* Pods */,
+				A1940D654105B4E86BAF269A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +112,7 @@
 		9D29A4D41CA14D1C008AED1D /* AudioPCMtoMP3 */ = {
 			isa = PBXGroup;
 			children = (
+				9D29A5081CA15C91008AED1D /* lame */,
 				9D29A4D81CA14D1C008AED1D /* AppDelegate.h */,
 				9D29A4D91CA14D1C008AED1D /* AppDelegate.m */,
 				9D29A4DB1CA14D1C008AED1D /* ViewController.h */,
@@ -140,6 +152,32 @@
 			path = AudioPCMtoMP3UITests;
 			sourceTree = "<group>";
 		};
+		9D29A5081CA15C91008AED1D /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				9D29A5091CA15C91008AED1D /* lame.h */,
+				9D29A50A1CA15C91008AED1D /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		A1940D654105B4E86BAF269A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				879AA7C34FE387E5671065CD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4315FAEA666641F3238DFC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ECD61FC3A51B2C6B57A38AB /* Pods.debug.xcconfig */,
+				DCEC16A71006B961D2E3B83F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D29A4FF1CA14D1C008AED1D /* Build configuration list for PBXNativeTarget "AudioPCMtoMP3" */;
 			buildPhases = (
+				5EEACF347881DF0A16D82A48 /* Check Pods Manifest.lock */,
 				9D29A4CE1CA14D1C008AED1D /* Sources */,
 				9D29A4CF1CA14D1C008AED1D /* Frameworks */,
 				9D29A4D01CA14D1C008AED1D /* Resources */,
+				E2FA1C840146CECFF3B4428C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +304,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EEACF347881DF0A16D82A48 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2FA1C840146CECFF3B4428C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D29A4CE1CA14D1C008AED1D /* Sources */ = {
@@ -409,10 +482,15 @@
 		};
 		9D29A5001CA14D1C008AED1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECD61FC3A51B2C6B57A38AB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioPCMtoMP3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioPCMtoMP3/lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlmg.AudioPCMtoMP3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,10 +498,15 @@
 		};
 		9D29A5011CA14D1C008AED1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEC16A71006B961D2E3B83F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioPCMtoMP3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioPCMtoMP3/lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlmg.AudioPCMtoMP3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,6 +579,7 @@
 				9D29A5011CA14D1C008AED1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D29A5021CA14D1C008AED1D /* Build configuration list for PBXNativeTarget "AudioPCMtoMP3Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +588,7 @@
 				9D29A5041CA14D1C008AED1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D29A5051CA14D1C008AED1D /* Build configuration list for PBXNativeTarget "AudioPCMtoMP3UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +597,7 @@
 				9D29A5071CA14D1C008AED1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
