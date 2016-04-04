@@ -59,6 +59,9 @@
 
 }
 
+#pragma mark - event
+
+
 #pragma mark - recorder
 - (void)audio_PCMtoMP3
 {
@@ -144,5 +147,8 @@
     }
     return  _doneButton;
 }
+
+#pragma mark - layoutSubviews
+
 
 @end
