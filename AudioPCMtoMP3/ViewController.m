@@ -101,6 +101,9 @@
     [self audio_PCMtoMP3];
 }
 
+#pragma mark - event
+
+
 #pragma mark - recorder
 - (void)audio_PCMtoMP3
 {
@@ -190,6 +193,7 @@
     return  _doneButton;
 }
 
+<<<<<<< HEAD
 #pragma mark - layoutSubviews 
 - (void)_layoutSubviews {
     self.recordButton.frame = CGRectMake(20, 200, 60, 60);
@@ -204,5 +208,9 @@
     }
     return path;
 }
+=======
+#pragma mark - layoutSubviews
+
+>>>>>>> origin/master
 
 @end
